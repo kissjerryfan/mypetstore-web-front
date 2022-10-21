@@ -1,0 +1,22 @@
+#submit {
+    border-radius: 16px;
+    padding-left: 1ex;
+    padding-right: 1ex;
+    padding-top: .5ex;
+    padding-bottom: .5ex;
+    margin-top: 15px;
+    background-color: #acd250;
+    color: #f8f7f6;
+    text-decoration: none;
+    font-family: helvetica, tahoma, arial, verdana, sans-serif;
+    font-size: 2ex;
+    border-width:0;
+}
+
+#submit:hover {
+    color: #acd250;
+    font-size: larger;
+    font-weight: bolder;
+    background: white;
+    cursor:pointer;
+  }

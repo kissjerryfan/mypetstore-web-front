@@ -1,0 +1,32 @@
+#submit {
+    border-radius: 10px;
+    padding: .3ex;
+    background-color: #acd250;
+    color: #f8f7f6;
+    text-decoration: none;
+    font-family: helvetica, tahoma, arial, verdana, sans-serif;
+    font-size: 2ex;
+    border-width:0;
+}
+
+#submit:hover {
+    color: #acd250;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: white;
+    cursor:pointer;
+  }
+
+#loginMsg {
+    font-family: helvetica, tahoma, arial, verdana, sans-serif;
+    font-weight: bolder;
+    margin: 0ex 0ex 0ex 0ex;
+    padding: .5ex;
+    font-size: 1.5ex;
+    color: red;
+}
+
+#loginInput {
+    margin: 0ex 0ex 0ex 0ex;
+    padding: .5ex;
+}

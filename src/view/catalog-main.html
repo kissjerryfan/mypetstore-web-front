@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%= require('./common/head.htm') %>
+</head>
+
+<body>
+    <%= require('./common/header.htm') %>
+
+    <div id="Content">
+        <div id="Welcome">
+            <div id="WelcomeContent" style="background:#FFF;opacity: 0.9;">
+
+            </div>
+        </div>
+
+        <div id="Main">
+            <div id="Sidebar">
+                <div id="SidebarContent">
+                    <a href="./catalog-list.html?id=FISH&route=product"><img
+                            src="<%= require('../images/fish_icon.gif')%>" /></a>
+                    <br /> Saltwater, Freshwater <br />
+                    <a href="./catalog-list.html?id=DOGS&route=product"><img
+                            src="<%= require('../images/dogs_icon.gif')%>" /></a>
+                    <br /> Various Breeds <br />
+                    <a href="./catalog-list.html?id=CATS&route=product"><img
+                            src="<%= require('../images/cats_icon.gif')%>" /></a>
+                    <br /> Various Breeds, Exotic Varieties <br />
+                    <a href="./catalog-list.html?id=REPTILES&route=product"><img
+                            src="<%= require('../images/reptiles_icon.gif')%>" /></a>
+                    <br /> Lizards, Turtles, Snakes <br />
+                    <a href="./catalog-list.html?id=BIRDS&route=product"><img src="<%= require('../images/birds_icon.gif')%>" /></a>
+                    <br /> Exotic Varieties
+                </div>
+            </div>
+
+            <div id="MainImage">
+                <div id="MainImageContent">
+                    <map name="estoremap">
+                        <area alt="Birds" coords="72,2,280,250" href="./catalog-list.html?id=BIRDS&route=product" shape="rect" />
+                        <area id="fishArea" alt="Fish" coords="2,180,72,250" href="./catalog-list.html?id=FISH&route=product"
+                            shape="rect" />
+                        <div id="fishTip" class="tip"></div>
+                        <area id="dogArea" alt="Dogs" coords="60,250,130,320" href="./catalog-list.html?id=DOGS&route=product"
+                            shape="rect" />
+                        <div id="dogTip" class="tip"></div>
+                        <area id="reptilesArea" alt="Reptiles" coords="140,270,210,340"
+                            href="./catalog-list.html?id=REPTILES&route=product" shape="rect" />
+                        <div id="reptileTip" class="tip"></div>
+                        <area id="catArea" alt="Cats" coords="225,240,295,310" href="./catalog-list.html?id=CATS&route=product"
+                            shape="rect" />
+                        <div id="catTip" class="tip"></div>
+                        <area id="birdArea" alt="Birds" coords="280,180,350,250" href="./catalog-list.html?id=BIRDs&route=product"
+                            shape="rect" />
+                        <div id="birdTip" class="tip"></div>
+                    </map>
+                    <img height="355" src="<%= require('../images/splash.png')%>" align="middle" usemap="#estoremap"
+                        width="350" />
+                </div>
+            </div>
+            <div id="Separator">&nbsp;</div>
+        </div>
+    </div>
+
+    <%= require('./common/footer.htm') %>
+</body>
+
+</html>

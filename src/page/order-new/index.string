@@ -1,0 +1,86 @@
+    <div id="BackLink">
+        <a href="./catalog-main.html">Return to Main Menu</a>
+    </div>
+    <div id="Catalog">
+        Please confirm the information below and then press continue...
+        <table>
+            <tr>
+                <th align="center" colspan="2"><font size="4"><b>Order</b>
+                    <b>{{data.orderDate}}</b>
+                </th>
+            </tr>
+
+            <tr>
+                <th colspan="2">Billing Address</th>
+            </tr>
+            <tr>
+                <td>First name:</td>
+                <td>{{data.billToFirstName}}</td>
+            </tr>
+            <tr>
+                <td>Last name:</td>
+                <td>{{data.billToLastName}}</td>
+            </tr>
+            <tr>
+                <td>Address 1:</td>
+                <td>{{data.billAddress1}}</td>
+            </tr>
+            <tr>
+                <td>Address 2:</td>
+                <td>{{data.billAddress2}}</td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>{{data.billCity}}</td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td>{{data.billState}}</td>
+            </tr>
+            <tr>
+                <td>Zip:</td>
+                <td>{{data.billZip}}</td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>{{data.billCountry}}</td>
+            </tr>
+            <tr>
+                <th colspan="2">Shipping Address</th>
+            </tr>
+            <tr>
+                <td>First name:</td>
+                <td>{{data.shipToFirstName}}</td>
+            </tr>
+            <tr>
+                <td>Last name:</td>
+                <td>{{data.shipToLastName}}</td>
+            </tr>
+            <tr>
+                <td>Address 1:</td>
+                <td>{{data.shipAddress1}}</td>
+            </tr>
+            <tr>
+                <td>Address 2:</td>
+                <td>{{data.shipAddress2}}</td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>{{data.shipCity}}</td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td>{{data.shipState}}</td>
+            </tr>
+            <tr>
+                <td>Zip:</td>
+                <td>{{data.shipZip}}</td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>{{data.shipCountry}}</td>
+            </tr>
+
+        </table>
+            <input type="button" id="confirm" value="confirm">
+    </div>

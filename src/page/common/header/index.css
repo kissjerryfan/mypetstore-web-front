@@ -1,0 +1,24 @@
+#signout-btn{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: helvetica, tahoma, arial, verdana, sans-serif;
+    font-size: 2ex;
+    background: #74976d;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#signout-btn:hover {
+    color: #ffffff;
+    font-size: larger;
+    font-weight: bolder;
+    cursor:pointer;
+}
+
+#cart:hover {
+    color: #ffffff;
+    font-size: larger;
+    font-weight: bolder;
+    cursor:pointer;
+}

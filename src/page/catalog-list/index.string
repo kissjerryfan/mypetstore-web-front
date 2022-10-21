@@ -1,0 +1,27 @@
+    <h2 id="test">{{ListData.title}}</h2>
+    
+    <table id="table">
+        <tr>
+            {{#ListData.headList}}
+                <th>{{.}}</th>
+            {{/ListData.headList}}
+        </tr>
+        
+        {{#ListData.productList}}
+            <tr>
+                <td><a href="./catalog-list.html?id={{productId}}&route=item">{{productId}}</a></td>
+                <td>{{name}}</td>
+            </tr>
+        {{/ListData.productList}}
+
+        {{#ListData.itemList}}
+            <tr>
+                <td><a class="itemIds" href="./catalog-detail.html?id={{itemId}}&route=item">{{itemId}}</a></td>
+                <td>{{productId}}</td>
+                <td>{{attribute1}}</td>
+                <td>{{listPrice}}</td>
+                <td><a href="#" class="addButton" name="{{itemId}}">Add to Cart</a></td>
+            </tr>
+        {{/ListData.itemList}}
+    
+    </table>

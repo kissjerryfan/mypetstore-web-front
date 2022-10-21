@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <%= require('./common/head.htm') %>
+</head>
+<body>
+
+<%= require('./common/header.htm') %>
+
+<div id="Content">
+    <div id="BackLink">
+        <a href="./catalog-main.html">Return to Main Menu</a>
+    </div>
+    <div id="Catalog">
+        <p id="orderMsg" style="color: darkred"></p>
+        <table>
+            <tr>
+                <th align="center" colspan="2">
+                    Order
+                    <span id="order-orderId"></span>
+                    <span id="order-orderDate"></span>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">Payment Details</th>
+            </tr>
+            <tr>
+                <td>Card Type:</td>
+                <td id="order-cardType"></td>
+            </tr>
+            <tr>
+                <td>Card Number:</td>
+                <td id="order-creditCard"></td>
+            </tr>
+            <tr>
+                <td>Expiry Date (MM/YYYY):</td>
+                <td id="order-expiryDate"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Billing Address</th>
+            </tr>
+            <tr>
+                <td>First name:</td>
+                <td id="order-billToFirstName"></td>
+            </tr>
+            <tr>
+                <td>Last name:</td>
+                <td id="order-billToLastName"></td>
+            </tr>
+            <tr>
+                <td>Address 1:</td>
+                <td id="order-billAddress1"></td>
+            </tr>
+            <tr>
+                <td>Address 2:</td>
+                <td id="order-billAddress2"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td id="order-billCity"></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td id="order-billState"></td>
+            </tr>
+            <tr>
+                <td>Zip:</td>
+                <td id="order-billZip"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td id="order-billCountry"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Shipping Address</th>
+            </tr>
+            <tr>
+                <td>First name:</td>
+                <td id="order-shipToFirstName"></td>
+            </tr>
+            <tr>
+                <td>Last name:</td>
+                <td id="order-shipToLastName"></td>
+            </tr>
+            <tr>
+                <td>Address 1:</td>
+                <td id="order-shipAddress1"></td>
+            </tr>
+            <tr>
+                <td>Address 2:</td>
+                <td id="order-shipAddress2"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td id="order-shipCity"></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td id="order-shipState"></td>
+            </tr>
+            <tr>
+                <td>Zip:</td>
+                <td id="order-shipZip"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td id="order-shipCountry"></td>
+            </tr>
+            <tr>
+                <td>Courier:</td>
+                <td id="order-courier"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Status:
+                    <span id="order-status"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table id="itemsList">
+                        <tr>
+                            <th>Item ID</th>
+                            <!--<th>Description</th>-->
+                            <th>Quantity</th>
+                            <!--<th>Price</th>-->
+                            <th>Total Cost</th>
+                        </tr>
+                    </table>
+            <tr>
+                <th colspan="5">Total:
+                    <span  id="order-totalPrice"></span>
+                </th>
+            </tr>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<%= require('./common/footer.htm') %>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <%= require('./common/head.htm') %>
+</head>
+
+<body>
+
+    <%= require('./common/header.htm') %>
+
+    <div id="Content">
+        <div id="BackLink">
+            <a href="./catalog-main.html">Return to Main Menu</a>
+        </div>
+
+        <div id="Catalog">
+
+            <div id="Cart">
+
+                <h2 style="margin-left: 300px">Shopping Cart</h2>
+                <form id="cart form" action="updateCart" method="post">
+                    <table style="margin-left: 250px">
+                        <tr>
+                            <th><b>Item ID</b></th>
+                            <th><b>Product ID</b></th>
+                            <th><b>Description</b></th>
+                            <th><b>In Stock?</b></th>
+                            <th><b>Quantity</b></th>
+                            <th><b>List Price</b></th>
+                            <th><b>Total Cost</b></th>
+                            <th>&nbsp;</th>
+                        </tr>
+
+                        <!-- <div id="cartEmptyMsg">
+                            <tr>
+                                <td colspan="8">
+                                    <b>Your cart is empty.</b>
+                                </td>
+                            </tr>
+                        </div> -->
+
+                        <tr id="cartListView">
+
+                        </tr>
+
+                        <tr>
+                            <td colspan="7">
+                                <input id="submit_cart" type="button" value="update Cart" /></a>
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+
+                    </form>
+                    <div>
+                        <a class="Button" href="./order-new.html" style="margin-left: 250px">Proceed to Checkout</a>
+                    </div>
+            </div>
+
+            <div id="Separator">&nbsp;</div>
+        </div>
+    </div>
+
+    <%= require('./common/footer.htm') %>
+
+
+</body>
+
+</html>

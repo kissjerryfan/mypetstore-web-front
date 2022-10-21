@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <%= require('./common/head.htm') %>
+</head>
+<body>
+
+<%= require('./common/header.htm') %>
+
+<div id="Content">
+    <div id="Catalog">
+        <p id="orderMsg" style="color: darkred"></p>
+        <form method="post" action="#">
+            <table>
+                <tr>
+                    <th colspan=2>Payment Details</th>
+                </tr>
+                <tr>
+                    <td>Card Type:</td>
+                    <td>
+                        <label>
+                            <select id="cardType">
+                                <option>Visa</option>
+                                <option>MasterCard</option>
+                                <option>American Express</option>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Card Number:</td>
+                    <td>
+                        <label>
+                            <input id="creditCard" type="text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Expiry Date (MM/YYYY):</td>
+                    <td>
+                        <label>
+                            <input id="expiryDate" type="text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan=2>Billing Address</th>
+                </tr>
+
+                <tr>
+                    <td>First name:</td>
+                    <td>
+                        <label>
+                            <input id="billToFirstName" type="text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last name:</td>
+                    <td>
+                        <label>
+                            <input id="billToLastName" type="text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address 1:</td>
+                    <td>
+                        <label>
+                            <input id="billAddress1" size="40" type="text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address 2:</td>
+                    <td>
+                        <label>
+                            <input id="billAddress2" size="40" type="text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td>
+                        <label>
+                            <input id="billCity" type="text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td>
+                        <label>
+                            <input id="billState" type="text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zip:</td>
+                    <td>
+                        <label>
+                            <input id="billZip" size="10" type="text">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td>
+                        <label>
+                            <input id="billCountry" size="15" type="text">
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan=2>
+                        <input id="checkboxShipping" name="shippingAddressRequired" type="checkbox">
+                        <label for="checkboxShipping">Ship to different address...</label>
+                    </td>
+                    <td hidden>
+                        <label>
+                            <input hidden name="confirmed" type="checkbox">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <div id="shipping address" style="display: none">
+                <table>
+                    <tr>
+                        <th colspan=2>Shipping Address</th>
+                    </tr>
+
+                    <tr>
+                        <td>First name:</td>
+                        <td>
+                            <label>
+                                <input name="shipToFirstName" id="account-firstName" type="text">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last name:</td>
+                        <td>
+                            <label>
+                                <input name="shipToLastName" id="account-lastName" type="text">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address 1:</td>
+                        <td>
+                            <label for="account-address1"></label><input name="shipAddress1" id="account-address1" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address 2:</td>
+                        <td>
+                            <label for="account-address2"></label><input name="shipAddress2" id="account-address2" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td>
+                            <input name="shipCity" id="account-city" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>State:</td>
+                        <td>
+                            <label for="account-state"></label><input name="shipState" id="account-state" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Zip:</td>
+                        <td>
+                            <label for="account-zip"></label><input name="shipZip" id="account-zip" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Country:</td>
+                        <td>
+                            <label for="account-country"></label><input name="shipCountry" id="account-country" type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <input type="button" id="submit" value="Continue">
+        </form>
+    </div>
+</div>
+<%= require('./common/footer.htm') %>
+<script>
+    var ipt = document.getElementById("checkboxShipping");
+    var div = document.getElementById("shipping address");
+    ipt.onclick = function () {
+        (ipt.checked === true) ? div.style = "display:block" : div.style = "display:none"
+    }
+</script>
+</body>
+</html>

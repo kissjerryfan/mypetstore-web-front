@@ -1,0 +1,20 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+#npm包
+/node_modules/
+
+#隐藏文件
+.DS_Store
+
+#输出目录
+/dist/
+
+# Local History for Visual Studio Code
+.history/
+package.json
+package-lock.json

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <%= require('./common/head.htm') %>
+</head>
+
+<body>
+
+    <%= require('./common/header.htm') %>
+
+        <div id="Content">
+            <div id="Catalog">
+                <form id="user_form" action="#" method="post">
+
+                    <div style="position: center;margin-left: auto;margin-right: auto; margin-top: 100px; margin-bottom: 100px; border-radius: 10px;border:4px solid; border-color: #91bd74;width:400px; height: 180px">
+                        <h3 style="color:#acd250; margin-top: 20px; margin-bottom: 15px;">输入账户密码登录</h3>
+                        <p id="loginInput">
+                            Username:<input type="text" id="username" name="username" value="j2ee"></br>
+                            Password:<input type="password" id="password" name="password" value="j2ee">
+                        </p>
+                        <p id="loginMsg"> </p>
+                        <input id="submit" name="signon"
+                            style="width: 110px; height:30px;border-radius: 12.5px;margin-right: auto;margin-left: auto;"
+                            type="button" value="Login" autocomplete="on">
+                    </div>
+
+                    <h3 style="position: relative; color: #acd250;margin-top: 55px">选择第三方登录</h3>
+                    <!-- <a href="https://openauth.alipaydev.com/oauth2/appToAppAuth.htm?app_id=2021000119641097&redirect_uri=http://localhost:8089/alipay/auth">
+                    <img src="<%= require('../images/zfb.png')%>" style="height: 40px;"/>
+                    </a> -->
+                    <input type="button" id="3" style="width: 40px; height: 40px; background: url('../images/zfb.png'); border: none; background-size: 40px 40px; cursor: pointer;"> 
+                    <a href="#"><img src="<%= require('../images/vx.png')%>" style="height: 40px;"/></a>
+                    <a href="#"><img src="<%= require('../images/vb.png')%>" style="height: 40px;"/></a>
+                    <a href="#"><img src="<%= require('../images/github.png')%>" style="height: 40px;"/></a>
+                    <a href="#"><img src="<%= require('../images/qq.png')%>" style="height: 40px;"/></a>
+                    <br/>
+                </form>
+                Need a user name and password?
+                <a href="../view/account-register.html">Register Now!</a>
+            </div>
+        </div>
+
+
+        <%= require('./common/footer.htm') %>
+
+
+</body>
+
+</html>

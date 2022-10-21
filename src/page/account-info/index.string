@@ -1,0 +1,142 @@
+<form id="user_form" action="#" method="post">
+                    <h3>User Information</h3>
+
+                    <table>
+                        <tr>
+                            <td>User ID:</td>
+                            <td>
+                                <input id="username" type="text" name="username" value={{ListData.username}}>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>New password:</td>
+                            <td>
+                                <input id="password" type="text" name="password" value="******">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Repeat password:</td>
+                            <td>
+                                <input id="repeatedPassword" type="text" name="repeatedPassword">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div>
+
+                        <h3>Account Information</h3>
+
+                        <table>
+
+                            <tr>
+                                <p id="pwdMsg"></p>
+                            </tr>
+                            <tr>
+                                <td>First name:</td>
+                                <td>
+                                    <input id="firstName" type="text" name="firstName" value={{ListData.firstName}}>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Last name:</td>
+                                <td>
+                                    <input id="lastName" type="text" name="lastName" value={{ListData.lastName}}>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td>
+                                    <input id="email" type="text" size="40" name="email" value={{ListData.email}}>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phone:</td>
+                                <td>
+                                    <input id="phone" type="text" name="phone" value={{ListData.phone}}>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address 1:</td>
+                                <td>
+                                    <input id="address1" type="text" size="40" name="address1" value={{ListData.address1}}>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address 2:</td>
+                                <td>
+                                    <input id="address2" type="text" size="40" name="address2" value={{ListData.address2}}>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>City:</td>
+                                <td>
+                                    <input id="city" type="text" name="city" value={{ListData.city}}>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>State:</td>
+                                <td>
+                                    <input id="state" type="text" name="state" size="4" value={{ListData.state}}>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Zip:</td>
+                                <td>
+                                    <input id="zip" type="text" name="zip" size="10" value={{ListData.zip}}>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Country:</td>
+                                <td>
+                                    <input id="country" type="text" name="country" size="15" value={{ListData.country}}>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3>Profile Information</h3>
+
+                        <table>
+                            <tr>
+                                <td>Language Preference:</td>
+                                <td>
+                                    <select id="language" name="account.languagePreference" value={{ListData.languagePreference}}>
+                                        <option id="OP_Chinese" value="Chinese" >Chinese</option>
+                                        <option id="OP_American" value="American" >American</option>
+                                        <option id="OP_Japanese" value="Japanese" >Japanese</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Favourite Category:</td>
+                                <td>
+                                    <select id="favouriteCategoryId" name="account.favouriteCategoryId">
+                                        <option id="OP_BIRDS" value="BIRDS" >BIRDS</option>
+                                        <option id="OP_DOGS" value="DOGS" >DOGS</option>
+                                        <option id="OP_CATS" value="CATS" >CATS</option>
+                                        <option id="OP_FISH" value="FISH" >FISH</option>
+                                        <option id="OP_REPTILES" value="REPTILES" >REPTILES</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Enable MyList</td>
+                                <td>
+                                    <input type="checkbox" id="listCheck" name="account.listOption">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Enable MyBanner</td>
+                                <td>
+                                    <input type="checkbox" id="bannerCheck" name="account.bannerOption">
+                                </td>
+                            </tr>
+                            
+
+                        </table>
+
+                    </div>
+
+                    <input id="editSubmit" type="button" name="editAccount" value="Save Account Information">
+                </form>
+
+                <a href="./order-orderList.html">My Orders</a>

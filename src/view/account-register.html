@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('./common/head.htm') %>
+</head>
+<body>
+    <%= require('./common/header.htm') %>
+
+<div id="Content">
+    <div id="Catalog">
+        <form id="user_form" action="#" method="post">
+            <h3>User Information</h3>
+
+            <table>
+                <tr>
+                    <td>User ID:</td>
+                    <td>
+                        <input id="username" type="text" name="username" th:field="*{username}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>New password:</td>
+                    <td>
+                        <input id="password" type="password" name="password" th:field="*{password}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Repeat password:</td>
+                    <td>
+                        <input id="repeatedPassword" type="password" name="repeatedPassword">
+                    </td>
+                </tr>
+                <tr>
+                    <p id="pwdMsg"></p>
+                </tr>
+            </table>
+
+            <input id="submit" name="register" type="button" value="Register" autocomplete="on">
+        </form>
+    </div>
+</div>
+
+<%= require('./common/footer.htm') %>
+
+</div>
+
+</body>
+</html>

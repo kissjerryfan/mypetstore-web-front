@@ -1,0 +1,39 @@
+<h2 style="margin-left: 300px" id="test">Shopping Cart</h2>
+<form id="cart form">
+    <table style="margin-left: 250px">
+        <tr>
+            {{#ListData.headList}}
+            <th>{{.}}</th>
+            {{/ListData.headList}}
+        </tr>
+
+        {{#ListData.itemList}}
+        <tr>
+            <td><a href="./catalog-detail.html?id={{itemId}}&route=item">{{itemId}}</a></td>
+            <td>{{productId}}</td>
+            <td>{{attribute1}}</td>
+            <td>{{inStock}}</td>
+            <td><input type="text" class="number" name="{{itemId}}" value="{{quantity}}"></td>
+            <td>{{listPrice}}</td>
+            <td class="total_value">{{totalCost}}
+            </td>
+        </tr>
+        {{/ListData.itemList}}
+            
+        <tr id="cartEmptyMsg" style="display:none; font-size:25px; font-weight:bold;">
+            <td colspan="8">
+                <b>Your cart is empty.</b>
+            </td>
+        </tr>
+
+
+    </table>
+
+
+</form>
+
+
+
+<div>
+    <a class="Button" href="./order-new.html" style="margin-left: 250px">Proceed to Checkout</a>
+</div>
