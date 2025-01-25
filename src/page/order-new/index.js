@@ -68,7 +68,7 @@ const newOrder = {
                     $('#confirm').bind('click',function (){
                         _order_service.insertOrder(newOrder.username,data,
                             function (res){
-                                /*window.location.href = _util.getURLParam('redirect') || './order-orderList.html';*/
+                                window.location.href = _util.getURLParam('redirect') || './order-orderList.html';
                                 $('body').html(res);
                             },
                             function (errMsg){
